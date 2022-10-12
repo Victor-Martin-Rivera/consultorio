@@ -8,7 +8,7 @@ const BusquedaAlimentos = () => {
     const getDataTable = async () => {
         let json = localStorage.getItem('foodTable')
         if (localStorage.getItem('fodTable') === undefined) {
-            const url = 'https://food-4eb80-default-rtdb.firebaseio.com//SMAE.json'
+            const url = 'https://smaedb-b59df-default-rtdb.firebaseio.com/SMAE.json'
             const res = await fetch(url)
             json = await res.json()
             localStorage.setItem('foodTable', json)
